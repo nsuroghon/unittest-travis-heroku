@@ -4,11 +4,12 @@
   "description": "This repository demonstrates using JS Testing (Linting and Unit), Github and Travis to deploy to Heroku.",
   "main": "server.js",
   "scripts": {
-    "test": "eslint server.js && npx mocha ./tests/index-spec.js --exit"
+    "test": "eslint server.js && npx mocha ./tests/index-spec.js --exit",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eapostol/github-travis-heroku.git"
+    "url": "git+https://github.com/nsuroghon/unittest-travis-heroku.git"
   },
   "keywords": [
     "node",
@@ -30,7 +31,8 @@
     "chai": "^4.2.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "travis": "^0.1.1"
   },
   "devDependencies": {
     "eslint": "^7.18.0",
@@ -39,5 +41,8 @@
   },
   "engines": {
     "node": "14.x"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
